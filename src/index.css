@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* @font-face: {
+    font-family: Antsypants;
+    src: url(./ANTSYPAN.TTF) format("truetype");
+  }; */
+
+  /* 
+    Red: #CC6CB49 - #a25752
+    Yellow: #D2A24C
+    Blue/Green: #73BDA8
+    Dark brown: #6f5643
+
+    // main-color: #ece6c2;
+    // main-color-dark: // #bdb89f #d1cdb6 #d6d1b2;
+  */
+  --main-color: #ece6c2;
+  --main-color-dark: rgba(219, 214, 180, 0.8);
+  --font-color: #01121a;
+  --inner-bar-color-1: #80b07d;
+  --inner-bar-color-2: #d98b65;
+  --inner-bar-color-3: #f3c05f;
+  --inner-bar-color-4: #f08882;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  /* font-family: Antsypants; */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

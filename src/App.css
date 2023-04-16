@@ -1,0 +1,106 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem; */
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+html {
+  background-color: var(--main-color) !important;
+  color: var(--font-color) !important;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.win-modal {
+  font-size: 0.5em;
+  margin-bottom: 1rem;
+}
+
+.main {
+  width: 25%;
+  height: 100%;
+}
+
+#inputField {
+  width: 96.5%;
+  height: 10%;
+  border: 1px solid black;
+  border-radius: 0.75em;
+  font-size: 1.25em;
+  padding: 0.5em 0.5em;
+}
+
+#inputField:focus {
+  outline: none;
+}
+
+.error-container {
+  margin: 1.5rem 0rem;
+  font-size: 1.2em;
+}
+
+.guess-container {
+  overflow: hidden;
+}
+
+.guesses {
+  position: relative;
+  border: 1px solid #bdb69f;
+  border-radius: 0.75em;
+  overflow: hidden;
+  margin-bottom: 0.5em;
+}
+
+.outer-bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color-dark);
+}
+
+.inner-bar {
+  min-width: 1%;
+  height: 100%;
+  border-radius: 0.75em;
+  background-color: var(--inner-bar-color-1);
+  width: 2%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  border-radius: 0.75em;
+  position: relative;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 1.25em;
+}
+
+.inputAnimation {
+  animation: shake 0.5s;
+  border: 1px solid #f08882 !important;
+  outline: 1px solid #f08882;
+}
+
+@keyframes shake {
+  0% {
+    margin-left: 0rem;
+  }
+  25% {
+    margin-left: 0.5rem;
+  }
+  75% {
+    margin-left: -0.5rem;
+  }
+  100% {
+    margin-left: 0rem;
+  }
+}
